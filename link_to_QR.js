@@ -9,6 +9,9 @@ btn.addEventListener("click",()=>{
   let val=get_input.value;
 if(!val)return;
 // btn.innerText="Generating QR Code...";
-// getting the qr code from google API 
+  
+//   api referance from https://goqr.me/api/doc/create-qr-code/ website.
+  
+// getting the qr code from google API  
 qr_code.src=` https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${val}`;
 });
